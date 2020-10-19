@@ -39,7 +39,7 @@ def add_to_cart(request, **kwargs):
     # create orderItem of the selected product
     order_item, status = OrderItem.objects.get_or_create(product=product)
     # create order associated with the user
-    user_order, status = Order.objects.get_or_create(owner=user_profile, is_ordered=False)
+    user_order, status = Order.objects.get_or_create(owner=use*-r_profile, is_ordered=False)
     user_order.items.add(order_item)
     if status:
         # generate a reference code
